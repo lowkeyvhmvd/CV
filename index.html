@@ -1,274 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Salama - Architectural Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2a5ca8;
-            --secondary: #f8f9fa;
-            --accent: #ff6b6b;
-            --text: #333333;
-            --light-text: #6c757d;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #ffffff;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 2px solid var(--primary);
-        }
-        
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin: 0;
-        }
-        
-        h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary);
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        h3 {
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-        
-        h4 {
-            font-weight: 500;
-            color: var(--light-text);
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-            font-style: italic;
-        }
-        
-        .contact-info {
-            text-align: right;
-            line-height: 1.4;
-        }
-        
-        .contact-info a {
-            color: var(--primary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .contact-info a:hover {
-            color: var(--accent);
-        }
-        
-        .intro {
-            background-color: var(--secondary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-        }
-        
-        td {
-            padding: 0.8rem;
-            border: 1px solid #dee2e6;
-            background-color: white;
-        }
-        
-        .experience-item, .education-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px dashed #e9ecef;
-        }
-        
-        .experience-item:last-child, .education-item:last-child {
-            border-bottom: none;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        
-        .skill-category {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        .download-btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 0.6rem 1.2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 1rem;
-            transition: background-color 0.3s;
-        }
-        
-        .download-btn:hover {
-            background-color: #1a4a8a;
-        }
-        
-        @media print {
-            .download-btn {
-                display: none;
-            }
-            body {
-                padding: 0;
-                font-size: 12pt;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .contact-info {
-                text-align: left;
-                margin-top: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Salama - CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .links {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .links a {
+      display: block;
+      color: #2980b9;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .slide-title {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Ahmad Salama</h1>
-            <p style="color: var(--light-text); margin-top: 0.5rem;">Architectural Engineer</p>
-        </div>
-        <div class="contact-info">
-            +201201538237<br>
-            a.salamainfo@gmail.com<br>
-            22/02/1999<br>
-            5 sadat.st-alarbaaon st. El-Nozha,Gesr El-Suez<br>
-            Military Status: Done<br>
-            <a href="https://www.behance.net/jrsalama20">Behance Portfolio</a><br>
-            <a href="https://www.linkedin.com/in/jrsalama20/">LinkedIn Profile</a>
-        </div>
-    </header>
+  <div class="container">
+    <h1>Ahmad Salama</h1>
+    <div class="links">
+      <a href="https://www.behance.net/jrsalama20">https://www.behance.net/jrsalama20</a>
+      <a href="https://www.linkedin.com/in/jrsalama20/">https://www.linkedin.com/in/jrsalama20/</a>
+      <a href="mailto:a.salamainfo@gmail.com">a.salamainfo@gmail.com</a>
+    </div>
 
-    <section class="intro">
-        <h2>Professional Profile</h2>
-        <p>A thrilled Architect with a concentration on Architecture sector, BIM Workflow and Interior design, knowledgeable about working shop drawings and visualization. Constantly seeking for new opportunities to enhance my professional abilities and broaden my knowledge to stay current in the fields of architecture, interior design, and visualization.</p>
-    </section>
+    <div class="section">
+      <h2>Black and White Simple Business School Graduate Corporate Resume</h2>
+    </div>
 
-    <section>
-        <h2>Key Competencies</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Team Skills</h4>
-                <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
-                    <li>Team Work</li>
-                    <li>Collaborating</li>
-                    <li>Strong interpersonal skills</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h4>Professional Attributes</h4>
-                <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
-                    <li>Responsible</li>
-                    <li>Proactive and self-motivated</li>
-                    <li>Detail-Oriented</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h4>Technical Skills</h4>
-                <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
-                    <li>Critical thinking skills</li>
-                    <li>Excellent communication skills</li>
-                    <li>Exceptional organisational skills</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        
-        <div class="experience-item">
-            <h3>Arcaid For Engineering services</h3>
-            <h4>Architect</h4>
-            <p>Used to work as Technical Office Engineer, preparing Shopdrawings for Pump Stations, Administration buildings, Multistory factory and villas. Visualizing multiple villas interior renders and 360 panorama tours. Preparing permit drawings, Preparing RFQ documents. Projects I've worked on: Mostaqbal Misr pump stations-Egypt Hanady water tank-Egypt Moonland Hotel-Egypt, Al-Dammam multistory factory-Saudi Arabia Multiple private villas projects-Saudi Arabia, Azyan khozam Villas-Saudi Arabia</p>
-        </div>
-        
-        <div class="experience-item">
-            <h3>Konooz Misr</h3>
-            <h4>Technical Office Engineer</h4>
-            <p>I was responsible for overseeing the technical aspects of production, ensuring the accuracy of material specifications, and coordinating with the production team to deliver high-quality stone products. Beside involves interpreting architectural and engineering drawings, preparing cutting lists, and optimizing material usage to minimize waste.</p>
-        </div>
-        
-        <div class="experience-item">
-            <h3>Interior Designer & 3D Visualizer (Freelancer)</h3>
-            <p>As an Interior Designer and 3D Visualizer, I was specialized in transforming residential spaces into aesthetic and functional environments. You collaborate with clients to conceptualize and develop design plans for projects ranging from flats to luxurious villas.</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education & Certifications</h2>
-        
-        <div class="education-item">
-            <h3>Bachelor of Architecture</h3>
-            <p>Majors: Architectural Engineering and Building Technology<br>
-            Modern Academy For Engineering and Technology</p>
-            
-            <h4>Graduation Year</h4>
-            <p>2016 : 2021</p>
-            
-            <h4>Cumulative Grade</h4>
-            <p>Good</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Extracurricular Activities</h2>
-        <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
-            <li>Interior Design Summer School by Studio 34 - 2019</li>
-            <li>SAMA Construction Company - Site Engineer - 2019</li>
-            <li>3Ds Max Course - AKMAM Studio - 2021</li>
-            <li>Technical Office Engineer by ArcPlan training centre - 2021</li>
-            <li>Interior Design Summer School by Studio 34 - 2022</li>
-            <li>Walid Yasin Architects - 2022</li>
-        </ul>
-    </section>
-
-    <a href="javascript:window.print()" class="download-btn">Download as PDF</a>
-
-    <script>
-        // Simple print functionality for PDF download
-        function downloadAsPDF() {
-            window.print();
-        }
-    </script>
+    <div class="section">
+      <p class="slide-title">Slide 1</p>
+    </div>
+  </div>
 </body>
 </html>
